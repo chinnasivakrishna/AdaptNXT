@@ -36,7 +36,7 @@ const LineChart = () => {
         data: [4, 2, 2],
         borderColor: 'orange',
         backgroundColor: 'orange',
-        tension: 0.4,
+        tension: 0.1,
         pointStyle: 'circle',
         pointRadius: 5,
         pointHoverRadius: 8,
