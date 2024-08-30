@@ -10,6 +10,7 @@
   max-width: 600px;
   margin-top: 0;
   border-radius: 20px;
+  position: relative;
 }
 
 .pie-chart h3 {

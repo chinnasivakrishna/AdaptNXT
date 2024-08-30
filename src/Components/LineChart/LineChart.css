@@ -3,7 +3,10 @@
 /* Container for the chart */
 .line-chart-container {
   width: 800px;
-  height: 500px;
+  height: 100%;
+  margin-bottom: 500px;
+  background: white;
+  border-radius: 20px;
   position: relative;
 }
 
@@ -27,7 +30,6 @@
 
 /* Legend text style */
 .custom-legend span {
-  background-color: #F4F5F7;
   font-size: 12px;
 }
 
@@ -57,12 +59,11 @@
 .line-chart-container h3 {
   font-size: 16px;
   margin-bottom: 90;
+  margin-left: 50px;
   color: #000000;
 }
 
-.line-chart-container {
-  text-align: center;
-}
+
 
 .custom-legend {
   display: flex;
@@ -89,7 +90,7 @@
 .legend-icon::before,
 .legend-icon::after {
   content: '';
-  width: calc(50% - 8px);
+  width: calc(50% - 4px);
   /* Adjusts line length on either side */
   height: 2px;
   background-color: currentColor;
@@ -97,10 +98,10 @@
 }
 
 .legend-icon span {
-  width: 12px;
-  height: 7px;
+  width: 5px;
+  height: 3px;
   border-radius: 50%;
-  background-color: white;
+  background-color: transparent;
   /* White center */
   border: 2px solid currentColor;
   /* Border color same as the line color */
@@ -118,7 +119,6 @@
 
 .legend-label {
   font-size: 16px;
-  color: #777;
   font-family: Arial, sans-serif;
   font-weight: 500;
   margin-left: 10px;

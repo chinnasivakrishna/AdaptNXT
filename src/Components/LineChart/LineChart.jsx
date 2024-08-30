@@ -13,6 +13,7 @@ import {
 } from 'chart.js';
 import annotationPlugin from 'chartjs-plugin-annotation';
 import './LineChart.css'; // Ensure this file contains your custom CSS
+import { BiInfoCircle } from "react-icons/bi";
 
 ChartJS.register(
   CategoryScale,
@@ -165,16 +166,16 @@ const LineChart = () => {
 
   return (
     <div className='line-chart-container'>
-      <h3>Sales vs Orders</h3>
+      <h3>Sales vs Orders<BiInfoCircle /></h3>
       <Line data={data} options={options} style={{ marginTop: '60px' }} />
       <div className="custom-legend">
         <div className="legend-item">
           <span className="legend-icon orders"><span className='circle'></span></span>
-          <span className="legend-label">orders</span>
+          <span className="legend-label" style={{color:"orange"}}>orders</span>
         </div>
         <div className="legend-item">
           <span className="legend-icon sales"><span className='circle'></span></span>
-          <span className="legend-label">sales</span>
+          <span className="legend-label" style={{color:"cyan"}}>sales</span>
         </div>
       </div>
     </div>

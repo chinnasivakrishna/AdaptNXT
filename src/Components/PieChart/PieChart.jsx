@@ -35,6 +35,7 @@ const PieChart = () => {
   const centerTextPlugin = {
     id: 'centerText',
     afterDraw: (chart) => {
+      if (chart.config.type !== 'pie') return; // Ensure this only applies to the Pie chart
       const { ctx, chartArea: { width, height } } = chart;
       ctx.save();
 
@@ -73,7 +74,7 @@ const PieChart = () => {
     },
   };
 
-  // Registering the plugin with Chart.js
+  // Registering the plugin only for this chart instance
   Chart.register(centerTextPlugin);
 
   return (
