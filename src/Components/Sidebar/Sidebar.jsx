@@ -30,7 +30,6 @@ const Sidebar = ({ onSelection }) => {
           </li>
         ))}
 
-        {/* Calculators */}
         <li
           className={openItems['Calculators'] ? 'active' : ''}
           onClick={() => toggleSubmenu('Calculators')}
@@ -46,7 +45,6 @@ const Sidebar = ({ onSelection }) => {
           </ul>
         )}
 
-        {/* Reports */}
         <li
           className={openItems['Reports'] ? 'active' : ''}
           onClick={() => toggleSubmenu('Reports')}
@@ -62,7 +60,6 @@ const Sidebar = ({ onSelection }) => {
           </ul>
         )}
 
-        {/* Account */}
         <li
           className={openItems['Account'] ? 'active' : ''}
           onClick={() => toggleSubmenu('Account')}

@@ -21,36 +21,32 @@ const PieChart = () => {
   const options = {
     plugins: {
       tooltip: {
-        enabled: false, // Disable the default tooltip
+        enabled: false, 
       },
       legend: {
-        display: false, // Hide the default legend
+        display: false,
       },
-      cutout: '70%', // Cutout to create the donut effect
+      cutout: '70%', 
     },
     maintainAspectRatio: false,
   };
 
-  // Plugin to add text in the center of the pie chart and percentages on slices
   const centerTextPlugin = {
     id: 'centerText',
     afterDraw: (chart) => {
-      if (chart.config.type !== 'pie') return; // Ensure this only applies to the Pie chart
+      if (chart.config.type !== 'pie') return; 
       const { ctx, chartArea: { width, height } } = chart;
       ctx.save();
 
-      // Draw the total value in the center
       ctx.font = 'bold 24px Arial';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.fillStyle = '#000';
       ctx.fillText('2659', width / 2, height / 2);
 
-      // Draw the "Total" label above the total value
       ctx.font = '12px Arial';
       ctx.fillText('Total', width / 2, height / 2 - 20);
 
-      // Draw percentage text inside each pie segment
       chart.getDatasetMeta(0).data.forEach((arc, index) => {
         const dataset = chart.data.datasets[0];
         const value = dataset.data[index];
@@ -74,7 +70,6 @@ const PieChart = () => {
     },
   };
 
-  // Registering the plugin only for this chart instance
   Chart.register(centerTextPlugin);
 
   return (

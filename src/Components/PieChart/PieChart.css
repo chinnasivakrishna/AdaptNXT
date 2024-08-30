@@ -1,4 +1,3 @@
-/* PieChart.css */
 
 
 .pie-chart {
@@ -53,7 +52,6 @@
 
   .pie {
     height: 250px;
-    /* Adjust height for smaller screens */
   }
 }
 
@@ -64,7 +62,6 @@
 
   .pie {
     height: 200px;
-    /* Adjust height for very small screens */
   }
 
   .legend {

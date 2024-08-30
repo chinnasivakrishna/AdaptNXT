@@ -1,6 +1,4 @@
-/* LineChart.css */
 
-/* Container for the chart */
 .line-chart-container {
   width: 800px;
   height: 107%;
@@ -10,7 +8,6 @@
   position: relative;
 }
 
-/* Custom legend container */
 .custom-legend {
   position: absolute;
   top: 50px;
@@ -21,19 +18,16 @@
   width: 100%;
 }
 
-/* Legend item style */
 .custom-legend div {  
   display: flex;
   align-items: center;
 }
 
 
-/* Legend text style */
 .custom-legend span {
   font-size: 12px;
 }
 
-/* Specific styles for the tooltip */
 .chartjs-tooltip {
   background-color: #ffffff !important;
   color: #000000 !important;
@@ -43,7 +37,6 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Info icon in the header */
 .info-icon {
   font-size: 16px;
   margin-left: 5px;
@@ -55,7 +48,6 @@
   color: black;
 }
 
-/* Title style */
 .line-chart-container h3 {
   font-size: 16px;
   margin-bottom: 90;
@@ -81,7 +73,6 @@
 .legend-icon {
   position: relative;
   width: 30px;
-  /* Total width of the legend item */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -91,10 +82,8 @@
 .legend-icon::after {
   content: '';
   width: calc(50% - 4px);
-  /* Adjusts line length on either side */
   height: 2px;
   background-color: currentColor;
-  /* Match the line color with the current color */
 }
 
 .legend-icon span {
@@ -102,11 +91,8 @@
   height: 3px;
   border-radius: 50%;
   background-color: transparent;
-  /* White center */
   border: 2px solid currentColor;
-  /* Border color same as the line color */
   z-index: 1;
-  /* Ensure the circle appears above the lines */
 }
 
 .legend-icon.orders {
