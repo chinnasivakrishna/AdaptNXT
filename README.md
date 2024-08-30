@@ -3,6 +3,7 @@
 
 # Dashboard Application
 
+![alt text](image.png)
 ## Overview
 
 This project is a React-based dashboard application that features a sidebar navigation, line and pie charts for data visualization, and conditional rendering of content based on the selected navigation item.
