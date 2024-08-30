@@ -3,7 +3,7 @@ import './Sidebar.css';
 
 const Sidebar = ({ onSelection }) => {
   const [selectedItem, setSelectedItem] = useState('Dashboard');
-  const [openItems, setOpenItems] = useState({});  // State to manage open submenus
+  const [openItems, setOpenItems] = useState({});  
 
   const handleSelection = (item) => {
     setSelectedItem(item);
