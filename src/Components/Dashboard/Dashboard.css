@@ -1,0 +1,19 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  height: 90%;
+}
