@@ -1,8 +1,5 @@
 # AdaptNXT
 
-Here's a documentation draft you can include in your `README.md` file to help new developers understand and use the code:
-
----
 
 # Dashboard Application
 

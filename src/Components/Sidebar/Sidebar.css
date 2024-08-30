@@ -1,8 +1,9 @@
 .sidebar {
-  width: 350px;
+  width: 10%;
   background-color: #f4f5f7;
   padding: 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 100%;
 }
 
 .sidebar ul {
@@ -16,10 +17,37 @@
   font-size: 16px;
   color: #888;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .sidebar li.active,
 .sidebar li:hover {
   color: #AB6FEB;
   background-color: #e7cdf4;
+}
+
+.submenu {
+  margin-left: 50px;
+}
+
+.submenu li {
+  width: 100%;
+}
+
+.arrow {
+  border: solid #888;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transition: transform 0.3s ease;
+}
+
+.arrow.right {
+  transform: rotate(45deg);
+}
+
+.arrow.down {
+  transform: rotate(-135deg);
 }
